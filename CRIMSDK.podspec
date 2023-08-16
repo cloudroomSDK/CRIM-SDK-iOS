@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CRIMSDK'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'CRIM-SDK'
 
 # This description is used to generate tags and improve search results.
@@ -63,7 +63,7 @@ Pod::Spec.new do |s|
     ss.source_files = 'CRIMSDK/Callbacker/*.{h,m}'
   end
 
-  valid_archs = ['arm64','x86_64']
+  valid_archs = ['armv7s','arm64','x86_64']
   s.xcconfig = {
     'VALID_ARCHS' =>  valid_archs.join(' '),
   }
