@@ -13,11 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 /*
  * 设置链接状态监听器
- * 如果IM链接中，会触发   onConnecting
- * 如果IM链接失败，会触发   onConnectFailure
- * 如果IM链接成功，会触发   onConnectSuccess
- * 如果IM被挤出掉线，会触发   onKickedOffline
- * 如果 token 过期，会触发   onUserTokenExpired
+ * 如果IM正在连接到服务器，会触发   onConnecting
+ * 如果IM连接服务器失败，会触发   onConnectFailure
+ * 如果IM已经成功连接到服务器，会触发   onConnectSuccess
+ * 如果当前用户被踢下线，会触发   onKickedOffline
+ * 如果在线时票据过期，会触发   onUserTokenExpired
  *
  * SDK初始化之前设置，后续会话改变可以根据监听器回调再刷新数据
  */
