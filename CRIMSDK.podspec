@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CRIMSDK'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'CRIM-SDK'
 
 # This description is used to generate tags and improve search results.
@@ -76,6 +76,6 @@ Pod::Spec.new do |s|
   
   s.static_framework = true
 
-  s.dependency 'CRIMSDKCore', '1.0.1'
+  s.dependency 'CRIMSDKCore', '1.0.3'
   s.dependency 'MJExtension'
 end
